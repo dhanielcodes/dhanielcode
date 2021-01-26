@@ -87,7 +87,7 @@ export default {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  padding: 40px 0px;
+  padding: 40px 20px;
 }
 .projects .head {
   text-align: center;
@@ -150,7 +150,6 @@ button span {
   .works {
     margin-top: 50px;
     display: grid;
-    padding: 0 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 300px);
     grid-gap: 10px;
@@ -160,7 +159,6 @@ button span {
   .works {
     margin-top: 50px;
     display: grid;
-    padding: 0 20px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 300px);
     grid-gap: 10px;
