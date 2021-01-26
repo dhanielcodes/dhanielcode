@@ -7,13 +7,13 @@
         >adekoyadaniel53@gmail.com</a
       >
       <div class="socials">
-        <a href="http://">
+        <a href="https://twitter.com/daniel_adekoya_">
           <img src="../assets/twitter.svg" alt="" />
         </a>
-        <a href="http://">
+        <a href="https://www.linkedin.com/in/daniel-adekoya-010810192/">
           <img src="../assets/linkedin.svg" alt="" />
         </a>
-        <a href="http://">
+        <a href="https://github.com/dhanielcodes/">
           <img src="../assets/github.svg" alt="" />
         </a>
       </div>
