@@ -79,6 +79,9 @@
 </template>
 
 <script>
+import gsap from "gsap";
+import { onMounted } from "vue";
+
 import Nav from "./components/Nav.vue";
 
 import Home from "./view/Home.vue";
@@ -94,6 +97,20 @@ export default {
     About,
     Projects,
     Footer,
+  },
+  setup() {
+    onMounted(() => {
+      gsap.from(".bg", 1, {
+        transform: "translateY(80%)",
+        ease: "expo",
+      });
+      gsap.to(".bg", 1, {
+        transform: "translateY(0%)",
+        ease: "expo",
+      });
+    });
+
+    return {};
   },
 };
 </script>
@@ -119,6 +136,7 @@ body {
   width: 100%;
   height: 100vh;
   z-index: -1;
+  transform: translateX(0%);
 }
 .en {
   overflow: hidden;

@@ -34,20 +34,21 @@ export default {
       gsap.from("h3, .h1h, .p", 1, {
         transform: "translateY(300%)",
         ease: "expo",
+        delay: 2,
       });
       gsap.from(".img", 1, {
         transform: "translateY(20%)",
         /* transform: "translateY(300%)", */
         opacity: 0,
         ease: "expo",
-        delay: 0.2,
+        delay: 2.2,
       });
       gsap.from(".scroll", 1, {
         transform: "translateY(20%) translateX(-50%)",
         /* transform: "translateY(300%)", */
         opacity: 0,
         ease: "expo",
-        delay: 0.6,
+        delay: 2.6,
       });
     });
 
