@@ -29,9 +29,9 @@
       </svg>
     </div>
     <ul :class="{ open: open }">
-      <li><a href="">About</a></li>
-      <li><a href="">Reach out</a></li>
-      <li><a href="">Works</a></li>
+      <li @click="open = !open"><a href="#about">About</a></li>
+      <li @click="open = !open"><a href="#reach">Reach out</a></li>
+      <li @click="open = !open"><a href="#work">Works</a></li>
     </ul>
   </div>
 </template>

@@ -73,9 +73,9 @@
   </svg>
   <Nav />
   <Home />
-  <About />
-  <Projects />
-  <Footer />
+  <About id="about" />
+  <Projects id="work" />
+  <Footer id="reach" />
 </template>
 
 <script>
@@ -109,8 +109,7 @@ html,
   color: white;
 }
 body {
-  overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   background: #2d2d2d;
 }
 .bg {
