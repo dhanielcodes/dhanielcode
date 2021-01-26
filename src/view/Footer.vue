@@ -1,11 +1,17 @@
 <template>
   <div class="footer">
     <footer>
-      <h1>Get int touch !</h1>
+      <div class="en">
+        <h1 class="footh">Get int touch !</h1>
+      </div>
       <div class="line"></div>
-      <a class="mail" href="mailto:adekoyadaniel53@gmail.com" target="_blank"
-        >adekoyadaniel53@gmail.com</a
-      >
+      <div class="en">
+        <div class="mail">
+          <a href="mailto:adekoyadaniel53@gmail.com" target="_blank"
+            >adekoyadaniel53@gmail.com</a
+          >
+        </div>
+      </div>
       <div class="socials">
         <a href="https://twitter.com/daniel_adekoya_">
           <img src="../assets/twitter.svg" alt="" />
@@ -22,7 +28,37 @@
 </template>
 
 <script>
-export default {};
+import { onMounted } from "vue";
+import gsap from "gsap";
+export default {
+  setup() {
+    onMounted(() => {
+      gsap.from(".footh, .mail", 1, {
+        transform: "translateY(300%)",
+        ease: "expo",
+        scrollTrigger: {
+          trigger: ".footer",
+          toggleActions: "restart",
+          start: "top center",
+        },
+      });
+      gsap.from(".socials", 1, {
+        transform: "translateY(20%)",
+        /* transform: "translateY(300%)", */
+        opacity: 0,
+        ease: "expo",
+        scrollTrigger: {
+          trigger: ".footer",
+          toggleActions: "restart",
+          start: "top center",
+        },
+        delay: 0.2,
+      });
+    });
+
+    return {};
+  },
+};
 </script>
 
 <style scoped>

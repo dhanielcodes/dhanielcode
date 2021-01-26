@@ -2,7 +2,9 @@
   <div class="projects">
     <div>
       <div class="head">
-        <h1>Assets</h1>
+        <div class="en">
+          <h1 class="h1">Assets</h1>
+        </div>
         <img src="../assets/element.svg" alt="" />
       </div>
       <div class="works">
@@ -33,9 +35,33 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger.min.js";
+import gsap from "gsap";
 export default {
   setup() {
+    onMounted(() => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.to(".h1", 1, {
+        transform: "translateY(0%)",
+        ease: "expo",
+        scrollTrigger: {
+          trigger: ".projects",
+          toggleActions: "restart",
+          start: "top center",
+        },
+      });
+      gsap.to(".works", 1, {
+        transform: "translateY(0%)",
+        ease: "expo",
+        scrollTrigger: {
+          trigger: ".projects",
+          toggleActions: "restart",
+          start: "top center",
+        },
+      });
+    });
     const works = ref([
       {
         lang: [{ name: "Vue" }, { name: "CSS" }],
@@ -92,12 +118,17 @@ export default {
 .projects .head {
   text-align: center;
 }
+.projects .head h1 {
+  transform: translateY(200%);
+}
 .works {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(2, 300px);
   grid-gap: 10px;
+  transform: translateY(200%);
+  overflow: hidden;
 }
 .works .work {
   background: #0000004d;

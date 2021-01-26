@@ -1,28 +1,70 @@
 <template>
   <div class="home">
     <div>
-      <h3>Daniel Adekoya</h3>
-      <h1>
-        I’m a Frontend Engineer <br />
-        and UI Developer
-      </h1>
-      <p>
-        I help build scallable frontend applications with<br />
-        proper design system given to me
-      </p>
+      <div class="en">
+        <h3>Daniel Adekoya</h3>
+      </div>
+      <div class="en">
+        <h1 class="h1h">
+          I’m a Frontend Engineer <br />
+          and UI Developer
+        </h1>
+      </div>
+      <div class="en">
+        <p class="p">
+          I help build scallable frontend applications with<br />
+          proper design system given to me
+        </p>
+      </div>
+
       <div class="img">
         <img src="../assets/face.svg" alt="" />
       </div>
+      <p class="scroll">Scroll</p>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { onMounted } from "vue";
+import gsap from "gsap";
+export default {
+  setup() {
+    onMounted(() => {
+      gsap.from("h3, .h1h, .p", 1, {
+        transform: "translateY(300%)",
+        ease: "expo",
+      });
+      gsap.from(".img", 1, {
+        transform: "translateY(20%)",
+        /* transform: "translateY(300%)", */
+        opacity: 0,
+        ease: "expo",
+        delay: 0.2,
+      });
+      gsap.from(".scroll", 1, {
+        transform: "translateY(20%) translateX(-50%)",
+        /* transform: "translateY(300%)", */
+        opacity: 0,
+        ease: "expo",
+        delay: 0.6,
+      });
+    });
+
+    return {};
+  },
+};
 </script>
 
 <style scoped>
+.scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0%);
+}
 .home {
+  position: relative;
   text-align: center;
   min-height: 100vh;
   display: grid;

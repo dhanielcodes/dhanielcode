@@ -120,4 +120,7 @@ body {
   height: 100vh;
   z-index: -1;
 }
+.en {
+  overflow: hidden;
+}
 </style>

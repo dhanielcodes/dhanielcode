@@ -54,6 +54,7 @@ export default {
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-12%);
+  z-index: 10;
 }
 .circle {
   width: 100px;
@@ -81,7 +82,7 @@ ul {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  background: #65656527;
+  background: #6565656d;
   width: 300px;
   margin: 10px 0;
   border-radius: 10px;
