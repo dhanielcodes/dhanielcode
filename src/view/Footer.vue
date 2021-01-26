@@ -2,7 +2,7 @@
   <div class="footer">
     <footer>
       <div class="en">
-        <h1 class="footh">Get int touch !</h1>
+        <h1 class="footh">Get in touch !</h1>
       </div>
       <div class="line"></div>
       <div class="en">
