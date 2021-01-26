@@ -9,10 +9,13 @@
         development techniques
       </p>
       <div class="btns">
-        <a href="http://" target="_blank">
+        <a
+          href="https://docs.google.com/document/d/e/2PACX-1vQNIAyJ53JZSh9H5PWDktdG1RgDvtb_fSnE4v5Jt5KjvGssmpXqoAuknLIoveFSdSuBJVIkh4oM0FDe/pub"
+          target="_blank"
+        >
           <button><span>Resume</span> <img src="../assets/link.svg" alt="" /></button>
         </a>
-        <a href="http://" target="_blank">
+        <a href="#work">
           <button><span>Works</span> <img src="../assets/link.svg" alt="" /></button>
         </a>
       </div>
