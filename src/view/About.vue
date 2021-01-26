@@ -27,7 +27,7 @@ export default {};
 <style scoped>
 .about {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   place-items: center;
   padding: 10px;
