@@ -30,8 +30,8 @@
     </div>
     <ul :class="{ open: open }">
       <li @click="open = !open"><a href="#about">About</a></li>
-      <li @click="open = !open"><a href="#reach">Reach out</a></li>
       <li @click="open = !open"><a href="#work">Works</a></li>
+      <li @click="open = !open"><a href="#reach">Reach out</a></li>
     </ul>
   </div>
 </template>
