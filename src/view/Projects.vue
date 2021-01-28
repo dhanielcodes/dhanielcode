@@ -131,7 +131,7 @@ export default {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(2, 300px);
+  grid-template-rows: repeat(3, 300px);
   grid-gap: 10px;
   transform: translateY(200%);
   overflow: hidden;
