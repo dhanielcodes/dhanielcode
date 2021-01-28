@@ -82,6 +82,12 @@ export default {
         link: "https://unsplash-clone.vercel.app/",
       },
       {
+        lang: [{ name: "Vue" }, { name: "GraphQL" }, { name: "Apollo" }],
+        title: "GraphQL Authentication",
+        desc: "A simple authentication system with graphQL and apollo client, using vue",
+        link: "https://graph-ql-authentication.vercel.app/",
+      },
+      {
         lang: [{ name: "Vue" }, { name: "Vite" }],
         title: "Vitejs State Management Template",
         desc:
