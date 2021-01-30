@@ -188,7 +188,7 @@ button span {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
     grid-gap: 10px;
   }
 }
@@ -197,7 +197,7 @@ button span {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(7, 300px);
     grid-gap: 10px;
   }
 }
