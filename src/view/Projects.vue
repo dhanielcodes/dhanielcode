@@ -64,7 +64,7 @@ export default {
     });
     const works = ref([
     {
-        lang: [{ name: "Vue" }, { name: "Typescript" }, { name: "CSS" }],
+        lang: [{ name: "CSS" },{ name: "Javascript" }, { name: "Animations" }],
         title: "MyGrip",
         desc: "A client work I did recently",
         link: "https://mygrip.app/",
