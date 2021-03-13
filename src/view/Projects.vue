@@ -63,6 +63,18 @@ export default {
       });
     });
     const works = ref([
+    {
+        lang: [{ name: "Vue" }, { name: "Typescript" }, { name: "CSS" }],
+        title: "MyGrip",
+        desc: "A client work I did recently",
+        link: "https://mygrip.app/",
+      },
+    {
+        lang: [{ name: "Vue" }, { name: "Typescript" }, { name: "CSS" }],
+        title: "Vue-Nav-UI",
+        desc: "This is a custom navbar vuejs package",
+        link: "https://dhanielcodes.github.io/vue-navigation-ui/",
+      },
       {
         lang: [{ name: "Vue" }, { name: "CSS" }],
         title: "Boton",
@@ -107,6 +119,7 @@ export default {
         desc: "Tudu is an activity manager web app",
         link: "https://tudu-olive.vercel.app/",
       },
+      
     ]);
 
     return { works };
@@ -188,7 +201,7 @@ button span {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(5, 300px);
     grid-gap: 10px;
   }
 }
@@ -197,7 +210,7 @@ button span {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 300px);
+    grid-template-rows: repeat(9, 300px);
     grid-gap: 10px;
   }
 }
