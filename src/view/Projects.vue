@@ -110,7 +110,7 @@ export default {
 
 <style scoped>
 .projects {
-  min-height: 100vh;
+  height: auto;
   display: grid;
   place-items: center;
   padding: 40px 20px;
@@ -125,7 +125,7 @@ export default {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(4, 300px);
+  grid-template-rows: repeat(2, 300px);
   grid-gap: 10px;
   transform: translateY(200%);
   overflow: hidden;
