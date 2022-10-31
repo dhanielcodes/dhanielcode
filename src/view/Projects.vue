@@ -63,17 +63,11 @@ export default {
       });
     });
     const works = ref([
-    {
-        lang: [{ name: "CSS" },{ name: "Javascript" }, { name: "Animations" }],
-        title: "MyGrip",
-        desc: "A client work I did recently",
-        link: "https://mygrip.app/",
-      },
       {
         lang: [{ name: "Vue" },{ name: "Typescript" }, { name: "GraphQL" }],
-        title: "MRT",
-        desc: "A client work I did at my current work",
-        link: "https://mrt-app.dork.delivery/",
+        title: "MRT Management Tool",
+        desc: "It is used by organisations to measure, review and track employee performance",
+        link: "https://mrtstaff.com/",
       },
     {
         lang: [{ name: "Vue" }, { name: "Typescript" }, { name: "CSS" }],
@@ -100,30 +94,11 @@ export default {
         link: "https://unsplash-clone.vercel.app/",
       },
       {
-        lang: [{ name: "Vue" }, { name: "GraphQL" }, { name: "Apollo" }],
-        title: "GraphQL Authentication",
-        desc: "A simple authentication system with graphQL and apollo client, using vue",
-        link: "https://graph-ql-authentication.vercel.app/",
-      },
-      {
         lang: [{ name: "Vue" }, { name: "Vite" }],
         title: "Vitejs State Management Template",
         desc:
           "A simple state management clone, with vue's vite js. Can be used to manage small vue apps with less data or medium",
         link: "https://github.com/dhanielcodes/vite-state-management-template",
-      },
-      {
-        lang: [{ name: "Vue" }, { name: "GraphQL" }, { name: "Apollo" }],
-        title: "Block - Q",
-        desc:
-          "I used the bitquery API to get data of different crypto coins, information data and displayed them",
-        link: "https://block-q.vercel.app/",
-      },
-      {
-        lang: [{ name: "Vue" }, { name: "Rest API" }, { name: "JWT" }],
-        title: "Tudu",
-        desc: "Tudu is an activity manager web app",
-        link: "https://tudu-olive.vercel.app/",
       },
       
     ]);

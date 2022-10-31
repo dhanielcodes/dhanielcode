@@ -12,7 +12,7 @@
       </div>
       <div class="en">
         <p class="p">
-          I help build scallable frontend applications with<br />
+          I help build scalable frontend applications with<br />
           proper design system given to me
         </p>
       </div>
